@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curs2 Ex2</title>
+    <style>
+      .input {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px 20px;
+      }
+      .form {
+        width: 40%;
+      }
+    </style>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home Test</h1>
-    </main>
+    <div class="form">
+      <div class="input">
+        <label for="name"> Name:</label>
+
+        <input type="text" name="name" id="name" />
+      </div>
+
+      <div class="input">
+        Date:
+        <input type="date" name="data" />
+      </div>
+
+      <div class="input">
+        Comment:
+        <textarea rws="3" col="40" name="comment"> </textarea>
+      </div>
+      <div>
+        <input type="button" value="Submit" name="button" />
+      </div>
+    </div>
   </body>
 </html>
